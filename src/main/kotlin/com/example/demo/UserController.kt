@@ -13,4 +13,17 @@ class UserController @Autowired
 
     @PostMapping
     fun createUser(@RequestBody user: User): User = userRepository.save(user)
+
+    @GetMapping("/rankings")
+    fun getUsersByRank(): List<User> = userRepository.findAll().sortedBy { it.rank }
+
+    @PutMapping("/calculate-rankings")
+    fun calculateRankings(): List<User> {
+        val users = userRepository.findAll()
+        users.sortedBy { it.time1 + it.time2 + it.time3 + it.time4 + it.time5 }.forEachIndexed { index, user ->
+            user.rank = index + 1
+        }
+        userRepository.saveAll(users)
+        return users
+    }
 }
