@@ -11,6 +11,7 @@ data class User(
     val id: Long = 0,
     val name: String,
     val email: String,
+    val passwort: String,
     val time1: Float,
     val time2: Float,
     val time3: Float,
