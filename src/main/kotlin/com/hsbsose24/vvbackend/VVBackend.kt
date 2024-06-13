@@ -1,4 +1,4 @@
-package com.example.demo
+package com.hsbsose24.vvbackend
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,4 +1,4 @@
-package com.example.demo
+package com.hsbsose24.vvbackend
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue

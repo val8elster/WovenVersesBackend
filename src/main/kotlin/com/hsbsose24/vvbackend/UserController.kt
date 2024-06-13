@@ -1,4 +1,4 @@
-package com.example.demo
+package com.hsbsose24.vvbackend
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
