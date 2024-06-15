@@ -6,7 +6,6 @@ import java.util.ArrayList
 
 @Service
 class UserService(@Autowired val userRepository: UserRepository) {
-
     fun getWhereValidRank(): List<User> {
         var users = ArrayList<User>()
         val allUsers = userRepository.findAll()

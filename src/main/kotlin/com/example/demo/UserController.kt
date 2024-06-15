@@ -11,8 +11,7 @@ class UserController @Autowired
         private val userRepository: UserRepository,
         private val userService: UserService
     )
-
-{
+    {
     @GetMapping
     fun getAllUsers(): List<User> = userRepository.findAll()
 
