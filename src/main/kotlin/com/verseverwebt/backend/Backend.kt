@@ -1,11 +1,11 @@
-package com.example.demo
+package com.verseverwebt.backend
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class DemoApplication
+class Backend
 
 fun main(args: Array<String>) {
-    runApplication<DemoApplication>(*args)
+    runApplication<Backend>(*args)
 }

@@ -1,4 +1,4 @@
-package com.example.demo
+package com.verseverwebt.backend
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
@@ -8,8 +8,8 @@ import java.util.*
 @RequestMapping("/users")
 class UserController @Autowired
     constructor(
-        private val userRepository: UserRepository,
-        private val userService: UserService
+    private val userRepository: UserRepository,
+    private val userService: UserService
     )
     {
     @GetMapping
