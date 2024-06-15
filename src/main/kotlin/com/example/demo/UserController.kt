@@ -75,4 +75,14 @@ class UserController @Autowired
         val user = userRepository.findById(id).orElseThrow { NoSuchElementException("User not found") }
         return user.introCompleted
     }
+
+    @GetMapping("/name/{name}")
+    fun checkIfExistsName(@PathVariable name: String): Boolean {
+        return userRepository.existsByName(name)
+    }
+
+    @GetMapping("/mail/{mail}")
+    fun checkIfExistsMail(@PathVariable mail: String): Boolean{
+        return userRepository.existsByEmail(mail)
+    }
 }
