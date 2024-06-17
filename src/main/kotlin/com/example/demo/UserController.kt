@@ -27,7 +27,7 @@ class UserController @Autowired
     @PutMapping("/calculate-rankings")
     fun calculateRankings(): Unit {
         val users = userService.getWhereValidRank()
-        users.sortedBy { it.time1 + it.time2 + it.time3 + it.time4 + it.time5 }.forEachIndexed { index, user ->
+        users.sortedBy { it.time1 + it.time2 + it.time3 + it.time4 + it.time5 + it.time6 + it.time7}.forEachIndexed { index, user ->
             user.rank = index + 1
         }
         userRepository.saveAll(users)
