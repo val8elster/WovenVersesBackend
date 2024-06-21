@@ -3,7 +3,7 @@
 ## 1. Summary
 
 The backend is responsible for data storage (MySQL database), user authentication and the leaderboard. It communicates via REST with the frontend. It is currently accessible through [elster.dev](https://elster.dev:8787), but can also be hosted locally.\
-The ([database](https://h2881275.stratoserver.net:8443/phpmyadmin) (username: mobcomp, password: 501ovWb&8) stores a user's user-id (primary key), username and mail (unique), their password, the time for each chapter, whether the user completed the intro and their placement in the ranking.\
+The [database](https://h2881275.stratoserver.net:8443/phpmyadmin) (username: mobcomp, password: 501ovWb&8) stores a user's user-id (primary key), username and mail (unique), their password, the time for each chapter, whether the user completed the intro and their placement in the ranking.\
 For a more detailed documentation, including mappings, more information about the database and the process of public hosting, visit the GitHub repository’s [README](https://github.com/val8elster/VerseVerwebtBackend/blob/main/README.md). 
 
 
