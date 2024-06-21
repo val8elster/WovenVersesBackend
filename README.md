@@ -71,7 +71,7 @@ In app/src/main/res/xml change the includeSubdomains adress parameter and in app
 
 ### 3.2. Public Hosting
 
-For public hosting, data security is essential. In this case the backend is being hosted on a self-owned server, linked to the domain [elster.dev](elster.dev). This domain is protected by a SSL-Certificate by [Lets-Encrypt](https://letsencrypt.org/). For Springboot, which the backend utilizes, the certificate has to be converted into a KeyStore through Keytool:  
+For public hosting, data security is essential. In this case the backend is being hosted on a self-owned server, linked to the domain [elster.dev](https://elster.dev). This domain is protected by a SSL-Certificate by [Lets-Encrypt](https://letsencrypt.org/). For Springboot, which the backend utilizes, the certificate has to be converted into a KeyStore through Keytool:  
 
 ~~~
 keytool -import -alias springboot -file myCertificate.crt -keystore keystore.p12 -storepass 501ovWb&8 
@@ -93,10 +93,10 @@ To avoid having to copy and install all the dependecies on the server, you can b
 
 ##### 3.2.1.1. Requirements
 
-JDK/JRE17:
+JDK/JRE17 or higher:
 
 ~~~
-sudo apt install openjdk-17-jdk openjdk-17-jre)
+sudo apt install openjdk-17-jdk openjdk-17-jre
 ~~~
 
 Maven:
