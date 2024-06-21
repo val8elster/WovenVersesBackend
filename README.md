@@ -1,10 +1,10 @@
-# Verse Verwebt Backend: Woven Verses
+# Woven Verses Backend
 
 ## 1. Summary
 
 The backend is responsible for data storage (MySQL database), user authentication and the leaderboard. It communicates via REST with the frontend. It is currently accessible through [elster.dev](https://elster.dev:8787), but can also be hosted locally.\
 The [database](https://h2881275.stratoserver.net:8443/phpmyadmin) (username: mobcomp, password: 501ovWb&8) stores a user's user-id (primary key), username and mail (unique), their password, the time for each chapter, whether the user completed the intro and their placement in the ranking.\
-For a more detailed documentation, including mappings, more information about the database and the process of public hosting, visit the GitHub repository’s [README](https://github.com/val8elster/VerseVerwebtBackend/blob/main/README.md). 
+For a more detailed documentation, including mappings, more information about the database and the process of public hosting, visit the GitHub repository’s [README](https://github.com/val8elster/WovenVersesBackend/blob/main/README.md). 
 
 
 ## 2. SQL
@@ -31,13 +31,13 @@ CREATE TABLE users (
 
 ### 3.1. Local Deployment 
 
-VerseVerwebtBackend is a GitHub repository. It is located [here](https://github.com/val8elster/VerseVerwebtBackend). To run the backend, it must be cloned from GitHub:
+WovenVersesBackend is a GitHub repository. It is located [here](https://github.com/val8elster/WovenVersesBackend). To run the backend, it must first be cloned from GitHub:
 
 ~~~git
-git clone https://github.com/val8elster/VerseVerwebtBackend
+git clone https://github.com/val8elster/WovenVersesBackend
 ~~~
 
-and opened in any IDE supporting Kotlin, such as IntelliJ. VerseVerwebtBackend uses Maven to manage the dependencies, they will be installed automatically upon building the project. 
+and opened in any IDE supporting Kotlin, such as IntelliJ. WovenVersesBackend uses Maven to manage the dependencies, they will be installed automatically upon building the project. 
 
 #### 3.1.1. Required changes to frontend when deploying locally
 
@@ -105,11 +105,11 @@ Maven:
 sudo apt install maven -y
 ~~~
 
-VerseVerwebtBackend's .jar file was created with WSL Ubuntu 22.04 LTS.
+WovenVersesBackend's .jar file was created with WSL Ubuntu 22.04 LTS.
 
 #### 3.2.2. Building the .jar
 
-Navigate into the root directory of VerseVerwebtBackend.
+Navigate into the root directory of WovenVersesBackend.
 
 There, run:
 
@@ -117,7 +117,7 @@ There, run:
 mvn clean package
 ~~~
 
-![](https://github.com/val8elster/VerseVerwebtBackend/assets/130545294/85b6fffe-88e2-476f-9b68-1af971bcca21)
+![](https://github.com/val8elster/WovenVersesBackend/assets/130545294/85b6fffe-88e2-476f-9b68-1af971bcca21)
 
 The .jar file should now be in the /target directory.
 
@@ -145,7 +145,7 @@ screen java -jar VVBackend-0.0.1-SNAPSHOT.jar
 
 Now you can access the backend through localhost: http(s)://localhost:8787 or your server: http(s)://server-ip:8787 with REST.
 
-(Why port 8787? That's also declared in the application.properties file, and in the VerseVerwebtBackend it is 8787. Changing it there means also having to change it in the frontend. This works the same as changing the IP / switching between localhost and a remote host. (see: 3.1.1.))
+(Why port 8787? That's also declared in the application.properties file, and in the WovenVersesBackend it is 8787. Changing it there means also having to change it in the frontend. This works the same as changing the IP / switching between localhost and a remote host. (see: 3.1.1.))
 
 ## 4. Mappings
 
