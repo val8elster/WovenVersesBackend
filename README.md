@@ -67,7 +67,7 @@ object ApiClient {
 }
 ~~~
 
-In app/src/main/res/xml change the includeSubdomains adress parameter and in app\src\main\java\com\example\verseverwebt\api change the BASE_URL to 10.0.2.2, as shown above, since that is what the Android Emulator identifies the Computer's localhost as.
+In app/src/main/res/xml change the includeSubdomains adress parameter and in app/src/main/java/com/example/verseverwebt/api change the BASE_URL to 10.0.2.2, as shown above, since that is what the Android Emulator identifies the Computer's localhost as.
 
 ### 3.2. Public Hosting
 
